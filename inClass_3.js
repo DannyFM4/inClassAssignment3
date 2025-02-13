@@ -1,4 +1,4 @@
-// Task 5
+// // Task 5
 
 let orders = [
     {id: 101, customer: "Alice", total: 300},
@@ -12,7 +12,7 @@ function findOrder(orders, orderId) {
 
 console.log(findOrder(orders,102));
 
-// Task 6
+// // Task 6
 
 let inventory = {
     items: [],
@@ -37,7 +37,7 @@ inventory.removeFirstItem();
 console.log(JSON.stringify(inventory.items));
 
 
-// Task 7
+// // Task 7
 
 let employees = [
     {name: "Alice", position: "Developer", salary: 70000},
@@ -50,3 +50,14 @@ function findEmployee(employees, name) {
 };
 
 console.log(findEmployee(employees, `Bob`));
+
+// Task 8
+
+let orders1 = [{id: 1, customer: "Alice"}, {id: 2, customer: "Bob"}];
+let orders2 = [{id: 2, customer: "Charlie"}, {id: 4, customer: "David"}];
+
+function mergeOrders(orderA, orderB) {
+    return[...orderA, ...orderB];
+};
+
+console.log(mergeOrders(orders1, orders2));
